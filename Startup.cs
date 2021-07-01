@@ -15,6 +15,7 @@ using System.Threading.Tasks;
 using BlogCore.AccesoDatos.Data.Repository;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using BlogCore.Utilidades;
+using BlogCore.Models;
 
 namespace BlogCore
 {
@@ -33,7 +34,7 @@ namespace BlogCore
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
-            services.AddIdentity<IdentityUser,IdentityRole>(options => options.SignIn.RequireConfirmedAccount = true)
+            services.AddIdentity<ApplicationUser, IdentityRole>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
 
             services.AddSingleton<IEmailSender, EmailSender>();
