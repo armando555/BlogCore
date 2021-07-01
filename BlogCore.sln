@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31402.337
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogCore", "BlogCore.csproj", "{9DBB34E4-6491-4B2F-BDEB-DA90492C7671}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogCore", "BlogCore.csproj", "{9DBB34E4-6491-4B2F-BDEB-DA90492C7671}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogCore.AccesoDatos", "..\BlogCore.AccesoDatos\BlogCore.AccesoDatos.csproj", "{57725F73-51B0-47F1-A61C-F9780BDBEB2B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogCore.AccesoDatos", "..\BlogCore.AccesoDatos\BlogCore.AccesoDatos.csproj", "{57725F73-51B0-47F1-A61C-F9780BDBEB2B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogCore.Models", "..\BlogCore.Models\BlogCore.Models.csproj", "{C96219FF-4D52-49EC-9403-F4956F45A803}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogCore.Models", "..\BlogCore.Models\BlogCore.Models.csproj", "{C96219FF-4D52-49EC-9403-F4956F45A803}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogCore.Utilidades", "..\BlogCore.Utilidades\BlogCore.Utilidades.csproj", "{897865E6-9512-41C3-8AAC-E2F32798B22F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogCore.Utilidades", "..\BlogCore.Utilidades\BlogCore.Utilidades.csproj", "{897865E6-9512-41C3-8AAC-E2F32798B22F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

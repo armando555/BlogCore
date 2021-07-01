@@ -1,0 +1,71 @@
+﻿@page
+@using BlogCore.Utilidades;
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="row">
+    <div class="col-md-6 offset-3">
+        <form asp-route-returnUrl="@Model.ReturnUrl" method="post">
+            <h4>Crear nueva cuenta.</h4>
+            <hr />
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Input.Email"></label>
+                <input asp-for="Input.Email" class="form-control" />
+                <span asp-validation-for="Input.Email" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Input.Nombre"></label>
+                <input asp-for="Input.Nombre" class="form-control" />
+                <span asp-validation-for="Input.Nombre" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Input.Direccion"></label>
+                <input asp-for="Input.Direccion" class="form-control" />
+                <span asp-validation-for="Input.Direccion" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Input.Ciudad"></label>
+                <input asp-for="Input.Ciudad" class="form-control" />
+                <span asp-validation-for="Input.Ciudad" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Input.Pais"></label>
+                <input asp-for="Input.Pais" class="form-control" />
+                <span asp-validation-for="Input.Pais" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Input.Password"></label>
+                <input asp-for="Input.Password" class="form-control" />
+                <span asp-validation-for="Input.Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Input.ConfirmPassword"></label>
+                <input asp-for="Input.ConfirmPassword" class="form-control" />
+                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <div class="col-5">
+                    <input type="radio" name="radUsuarioRole" value="@CNT.Admin" />@CNT.Admin
+                    <input type= "radio" name="radUsuarioRole" value="@CNT.Usuario" />@CNT.Usuario
+                </div>
+            </div>
+
+
+            <button type="submit" class="btn btn-primary">Registrarse</button>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
