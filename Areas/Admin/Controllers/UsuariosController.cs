@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BlogCore.Areas.Admin.Controllers
 {
-    //[Authorize]
+    [Authorize]
     [Area("Admin")]
     public class UsuariosController : Controller
     {
